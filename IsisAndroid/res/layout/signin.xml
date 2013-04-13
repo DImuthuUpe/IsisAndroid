@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Url"
+        />
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="http://10.217.97.227:8080/restful/"
+        android:ems="10" >
+		
+        <requestFocus />
+    </EditText>
+	<TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        />
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="sven"
+        android:ems="10" />
+	<TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        />
+
+	<EditText
+	    android:id="@+id/pass"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:inputType="textPassword"
+	    android:text="pass"
+	    android:ems="10" />
+	<Button 
+	    android:id="@+id/signin_submit"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Sign In"
+	    
+	    />
+
+</LinearLayout>
