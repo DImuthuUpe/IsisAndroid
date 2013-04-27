@@ -6,8 +6,13 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class ListViewActivity extends ListActivity{
 
@@ -27,5 +32,15 @@ public class ListViewActivity extends ListActivity{
 		 
 		setListAdapter(new ArrayAdapter<String>(this, R.layout.slingle_list_item,titles)); 
 		ListView list = getListView();
+		list.setOnItemClickListener( new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
+				// TODO Auto-generated method stub
+				Toast.makeText(getApplicationContext(), ((TextView)arg1).getText(), Toast.LENGTH_SHORT).show();
+				
+			}
+			
+		});
 	}
 }
