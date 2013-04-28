@@ -1,5 +1,6 @@
-package com.example.isisandroid;
+package com.isis.android.activity;
 
+import com.example.isisandroid.R;
 import com.isis.android.general.Service;
 
 import android.app.ListActivity;
@@ -14,7 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ListViewActivity extends ListActivity{
+public class ServiceViewActivity extends ListActivity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,13 @@ public class ListViewActivity extends ListActivity{
 		super.onCreate(savedInstanceState);
 		Intent intent = getIntent();
 		Object[] dene = (Object[])intent.getSerializableExtra("SERVICE_LIST");
-		Service services[]= new Service[dene.length];
+
+
+		final String url = intent.getExtras().getString("url");
+		final String uname = intent.getExtras().getString("uname");
+		final String pass = intent.getExtras().getString("pass");
+		
+		final Service services[]= new Service[dene.length];
 		String titles[] = new String[dene.length];
 		for(int i=0;i<dene.length;i++){
 			services[i]= (Service)dene[i];
@@ -37,8 +44,13 @@ public class ListViewActivity extends ListActivity{
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
 				// TODO Auto-generated method stub
-				Toast.makeText(getApplicationContext(), ((TextView)arg1).getText(), Toast.LENGTH_SHORT).show();
-				
+				Toast.makeText(getApplicationContext(), arg2+" Selected" , Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent("android.intent.action.ACTIONVIEW");
+				intent.putExtra("SERVICE", services[arg2]);		
+				intent.putExtra("uname", uname);
+				intent.putExtra("pass", pass);
+				intent.putExtra("url", url);
+				startActivity(intent);				
 			}
 			
 		});

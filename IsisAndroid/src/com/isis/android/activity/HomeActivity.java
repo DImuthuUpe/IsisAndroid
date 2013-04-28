@@ -1,18 +1,17 @@
-package com.example.isisandroid;
+package com.isis.android.activity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.example.isisandroid.R;
 import com.isis.android.general.Service;
 import com.isis.android.json.JSONParser;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.Settings.System;
 import android.util.Log;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class HomeActivity extends Activity{
@@ -54,10 +53,13 @@ public class HomeActivity extends Activity{
 							String type = serviJsonArray.getJSONObject(j).getString("type");
 							String title = serviJsonArray.getJSONObject(j).getString("title");
 							
-							services[j]= new Service(id, rel, href, method, type, title);
+							services[j]= new Service(id, rel, href, method, type, title,uname,pass);
 						}
 						Intent intent = new Intent("android.intent.action.LISTVIEW");
 						intent.putExtra("SERVICE_LIST", services);
+						intent.putExtra("uname", uname);
+						intent.putExtra("pass", pass);
+						intent.putExtra("url", url);
 						
 						startActivity(intent);
 						

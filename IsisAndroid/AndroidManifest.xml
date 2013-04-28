@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.isisandroid.MainActivity"
+            android:name="com.isis.android.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
         </activity>
         
          <activity
-            android:name="com.example.isisandroid.HomeActivity"
+            android:name="com.isis.android.activity.HomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.HOME" />
@@ -34,10 +34,30 @@
         </activity>
         
          <activity
-            android:name="com.example.isisandroid.ListViewActivity"
+            android:name="com.isis.android.activity.ServiceViewActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.LISTVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.isis.android.activity.ActionViewActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTIONVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.isis.android.activity.InvokeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.INVOKEVIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>

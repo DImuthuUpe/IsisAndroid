@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:text="http://10.96.28.53:8080/restful/"
+        android:text="http://10.96.26.237:8080/restful/"
         android:ems="10" >
 		
         <requestFocus />

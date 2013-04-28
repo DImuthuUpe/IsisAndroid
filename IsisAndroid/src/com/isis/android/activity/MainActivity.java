@@ -1,4 +1,6 @@
-package com.example.isisandroid;
+package com.isis.android.activity;
+
+import com.example.isisandroid.R;
 
 import android.os.Bundle;
 import android.os.StrictMode;

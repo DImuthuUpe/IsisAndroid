@@ -32,7 +32,7 @@ public class JSONParser {
     }
  
     public JSONObject getJSONFromUrl(String url,String uname,String pass) {
- 
+    	url = url.replace(" ", "%20");
         // Making HTTP request
         try {
             // defaultHttpClient
@@ -65,7 +65,7 @@ public class JSONParser {
             String line = null;
             while ((line = reader.readLine()) != null) {
                 sb.append(line + "\n");
-                System.out.println(line);
+                //System.out.println(line);
             }
             
             is.close();
