@@ -1,8 +1,10 @@
 package com.isis.android.general;
 
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 
 public class DataConverter {
@@ -17,7 +19,7 @@ public class DataConverter {
 		}else if(type.equals("java.lang.String")){
 			return new EditText(context);
 		}else if(type.equals("org.joda.time.LocalDate")){
-			return new EditText(context);
+			return new DatePicker(context );
 		}
 		
 		return null;

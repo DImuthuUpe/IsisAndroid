@@ -104,8 +104,7 @@ public class Parameter implements Serializable{
 
 
 	public View getView(Context context){
-		View view= DataConverter.convert(type, context);
-		if(view==null){
+		View view =null;
 			if(choices!=null){
 				Spinner spinner = new Spinner(context);
 				ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(context, android.R.layout.simple_spinner_item, android.R.id.text1);
@@ -116,8 +115,10 @@ public class Parameter implements Serializable{
 				}				
 				spinnerAdapter.notifyDataSetChanged();
 				view = spinner;
+			}else{
+				view= DataConverter.convert(type, context);
 			}
-		}
+		
 		return view;
 	}
 	

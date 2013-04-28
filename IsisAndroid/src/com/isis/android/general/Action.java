@@ -1,13 +1,17 @@
 package com.isis.android.general;
 
 import java.io.Serializable;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import android.util.Log;
 
 import com.isis.android.json.JSONParser;
 
@@ -134,6 +138,29 @@ public class Action implements Serializable{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		}
+		return null;
+	}
+	
+	
+	public InvokeResult invokeAction(Map<String, String> args){
+		JSONParser jp = new JSONParser();
+		JSONObject obj=  jp.getJSONFromUrl(link.get("href"),uname,pass);
+		try {
+			JSONArray params = obj.getJSONArray("links");
+			JSONObject inv=getJSONObjectByName(params, "rel", "invoke");
+			if(inv!=null){
+				String method = inv.getString("method");
+				String url = inv.getString("href");
+				InvokeResult res = new InvokeResult();
+				Log.v("method", method);
+				Log.v("url", url);
+				res.setTotalHeader(jp.getJSONFromUrl(url,uname,pass,method,args));
+				return res;
+			}
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		return null;
 	}
