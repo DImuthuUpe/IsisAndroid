@@ -2,13 +2,15 @@ A generic (Naked Objects) Android app, to run against Isis' Restful Objects inte
 
 Description
 
-Apache Isis™ software is a framework for rapidly developing domain-driven apps in Java. Write your business logic in entities, domain services and repositories, and the framework dynamically generates a representation of that domain model as a webapp or a RESTful API. Use for prototyping or production. 
+Apache Isisï¿½ software is a framework for rapidly developing domain-driven apps in Java. Write your business logic in entities, domain services and repositories, and the framework dynamically generates a representation of that domain model as a webapp or a RESTful API. Use for prototyping or production. 
 
 ~~~ 
 
 Isis works by building a metamodel from the domain object models, from which a generic user interface is generated dynamically at runtime. There are several implementations of the generic UI, one based on Wicket, one based on Servlet/JSPs, and one based on jax-rs and serving up a Restful API over http and json. This API is fully documented in the Restful Objects spec (http://restfulobjects.org) ... there is also a (non-Apache) open source implementation on .NET. 
 
 This GSOC suggestion is to develop a native Android app that will consume the RESTful API provided by Isis to provide a generic (naked objects) viewer for use either from a smartphone or tablet. Optionally this generic viewer could be extensible to allow mashups (as is supported by Isis' own Wicket-based viewer).
+
+Current Development Video : http://www.youtube.com/watch?v=_POnfbxeqpE
 
 Setting up development environment
 
