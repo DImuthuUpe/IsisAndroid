@@ -1,4 +1,4 @@
-package com.isis.android.json;
+package com.dimuthuupeksha.json;
 
 import java.io.BufferedReader;
 import java.io.IOException;

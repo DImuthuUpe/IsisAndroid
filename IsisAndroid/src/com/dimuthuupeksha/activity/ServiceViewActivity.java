@@ -1,7 +1,7 @@
-package com.isis.android.activity;
+package com.dimuthuupeksha.activity;
 
+import com.dimuthuupeksha.general.Service;
 import com.example.isisandroid.R;
-import com.isis.android.general.Service;
 
 import android.app.ListActivity;
 import android.content.Intent;

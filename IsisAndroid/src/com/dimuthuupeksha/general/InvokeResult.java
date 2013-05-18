@@ -1,4 +1,4 @@
-package com.isis.android.general;
+package com.dimuthuupeksha.general;
 
 import java.io.Serializable;
 import java.util.HashMap;

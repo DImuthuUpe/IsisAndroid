@@ -1,11 +1,11 @@
-package com.isis.android.activity;
+package com.dimuthuupeksha.activity;
 
 
+import com.dimuthuupeksha.general.Action;
+import com.dimuthuupeksha.general.InvokeResult;
+import com.dimuthuupeksha.general.Parameter;
+import com.dimuthuupeksha.general.Service;
 import com.example.isisandroid.R;
-import com.isis.android.general.Action;
-import com.isis.android.general.InvokeResult;
-import com.isis.android.general.Parameter;
-import com.isis.android.general.Service;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.isis.android.general;
+package com.dimuthuupeksha.general;
 
 import java.io.Serializable;
 import java.lang.reflect.Method;
@@ -13,7 +13,7 @@ import org.json.JSONObject;
 
 import android.util.Log;
 
-import com.isis.android.json.JSONParser;
+import com.dimuthuupeksha.json.JSONParser;
 
 public class Action implements Serializable{
 

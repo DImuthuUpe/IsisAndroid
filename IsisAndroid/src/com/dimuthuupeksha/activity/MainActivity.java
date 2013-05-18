@@ -1,4 +1,4 @@
-package com.isis.android.activity;
+package com.dimuthuupeksha.activity;
 
 import com.example.isisandroid.R;
 

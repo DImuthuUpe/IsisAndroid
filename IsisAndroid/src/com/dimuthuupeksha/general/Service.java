@@ -1,4 +1,4 @@
-package com.isis.android.general;
+package com.dimuthuupeksha.general;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.isis.android.json.JSONParser;
+import com.dimuthuupeksha.json.JSONParser;
 
 @SuppressWarnings("serial")
 public class Service implements Serializable{

@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.isis.android.activity.MainActivity"
+            android:name="com.dimuthuupeksha.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
         </activity>
         
          <activity
-            android:name="com.isis.android.activity.HomeActivity"
+            android:name="com.dimuthuupeksha.activity.HomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.HOME" />
@@ -34,7 +34,7 @@
         </activity>
         
          <activity
-            android:name="com.isis.android.activity.ServiceViewActivity"
+            android:name="com.dimuthuupeksha.activity.ServiceViewActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.LISTVIEW" />
@@ -44,7 +44,7 @@
         </activity>
         
          <activity
-            android:name="com.isis.android.activity.ActionViewActivity"
+            android:name="com.dimuthuupeksha.activity.ActionViewActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.ACTIONVIEW" />
@@ -54,7 +54,7 @@
         </activity>
         
          <activity
-            android:name="com.isis.android.activity.InvokeActivity"
+            android:name="com.dimuthuupeksha.activity.InvokeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.INVOKEVIEW" />
@@ -65,7 +65,7 @@
 
          
         <activity
-            android:name="com.isis.android.activity.ResultViewActivity"
+            android:name="com.dimuthuupeksha.activity.ResultViewActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.RESULTVIEW" />

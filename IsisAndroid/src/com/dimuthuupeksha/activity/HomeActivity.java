@@ -1,12 +1,12 @@
-package com.isis.android.activity;
+package com.dimuthuupeksha.activity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.dimuthuupeksha.general.Service;
+import com.dimuthuupeksha.json.JSONParser;
 import com.example.isisandroid.R;
-import com.isis.android.general.Service;
-import com.isis.android.json.JSONParser;
 
 import android.app.Activity;
 import android.content.Intent;
